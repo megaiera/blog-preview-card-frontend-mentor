@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+
+    --Font:'Figtree', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--Yellow);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    background-color: var(--White);
+    width: 370px;
+    height: 470px;
+    border: 1px solid var(--Black);
+    border-radius: 15px;
+    box-shadow: 15px 15px var(--Black);
+    padding: 17px;
+}
+
+img{
+    display: block;
+    border-radius: 10px;
+}
+
+button{
+    background-color: var(--Yellow);
+    padding: 5px 13px 5px 13px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 3.5px;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--White);
+    border: 1px solid var(--Grey);
+    box-shadow: 5px 5px 5px var(--Grey);
+}
+
+.article-date{
+    margin: 15px 5px 15px 0px; 
+    font-size: 14px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: var(--Yellow);
+    text-decoration: none;
+}
+
+hgroup p{
+    color: var(--Grey);
+    font-size: 15px;
+    font-weight:600;
+    text-align:left;
+    margin-top: 15px;
+
+}
+
+.author{
+    display: flex;
+    flex-direction:row;
+    margin-top: 20px;
+}
+
+.author img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.author p{
+    color: var(--Black);
+    font-size: 13px;
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+.attribution{
+    color: var(--Grey);
+    font-size: 10px;
+    word-spacing: 2px;
+}
+
+.attribution a{
+    padding-left: 2.5px;
+    color: var(--White);
+    font-style:italic;
+}
